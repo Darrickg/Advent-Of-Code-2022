@@ -13,14 +13,6 @@ def opponentValue(value):
     else:
         return "scissors"
 
-# def yourValue(value):
-#     if value == "X":
-#         return "rock"
-#     elif value == "Y":
-#         return "paper"
-#     else:
-#         return "scissors"
-
 def yourState(value):
     if value == "X":
         return "lose"
@@ -28,29 +20,6 @@ def yourState(value):
         return "draw"
     else:
         return "win"
-
-# def match(oppVal, yourVal):
-#     if oppVal == "rock":
-#         if yourVal == "rock":
-#             return "draw"
-#         elif yourVal == "paper":
-#             return "win"
-#         else:
-#             return "lose"
-#     elif oppVal == "paper":
-#         if yourVal == "paper":
-#             return "draw"
-#         elif yourVal == "scissors":
-#             return "win"
-#         else:
-#             return "lose"
-#     else:
-#         if yourVal == "scissors":
-#             return "draw"
-#         elif yourVal == "rock":
-#             return "win"
-#         else:
-#             return "lose"
 
 def yourValue(oppVal, yourState):
     if oppVal == "rock":
@@ -74,23 +43,6 @@ def yourValue(oppVal, yourState):
             return "rock"
         else:
             return "paper"
-
-# def calculateScore(yourVal, state):
-#     if state == "win":
-#         x = 6
-#     elif state == "draw":
-#         x = 3
-#     else:
-#         x = 0
-
-#     if yourVal == "rock":
-#         y = 1
-#     elif yourVal == "paper":
-#         y = 2
-#     else:
-#         y = 3
-    
-#     return x + y
 
 def calculateScore(yourState, yourVal):
     if yourState == "win":
