@@ -1,4 +1,4 @@
-file = open("input.txt", "r")
+file = open("day1_1", "r")
 
 #test test
 maxElf = 0
